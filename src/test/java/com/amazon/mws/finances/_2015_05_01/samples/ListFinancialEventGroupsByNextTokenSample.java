@@ -15,13 +15,12 @@
  */
 package com.amazon.mws.finances._2015_05_01.samples;
 
-import java.util.*;
-import javax.xml.datatype.XMLGregorianCalendar;
-import java.math.BigDecimal;
-
-import com.amazonservices.mws.client.*;
-import com.amazon.mws.finances._2015_05_01.*;
-import com.amazon.mws.finances._2015_05_01.model.*;
+import com.amazon.mws.finances._2015_05_01.MWSFinancesService;
+import com.amazon.mws.finances._2015_05_01.MWSFinancesServiceClient;
+import com.amazon.mws.finances._2015_05_01.MWSFinancesServiceException;
+import com.amazon.mws.finances._2015_05_01.model.ListFinancialEventGroupsByNextTokenRequest;
+import com.amazon.mws.finances._2015_05_01.model.ListFinancialEventGroupsByNextTokenResponse;
+import com.amazon.mws.finances._2015_05_01.model.ResponseHeaderMetadata;
 
 
 /** Sample call for ListFinancialEventGroupsByNextToken. */

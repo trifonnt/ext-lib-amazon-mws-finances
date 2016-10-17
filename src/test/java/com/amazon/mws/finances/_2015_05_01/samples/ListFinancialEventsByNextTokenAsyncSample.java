@@ -15,14 +15,17 @@
  */
 package com.amazon.mws.finances._2015_05_01.samples;
 
-import java.util.*;
-import java.util.concurrent.*;
-import javax.xml.datatype.XMLGregorianCalendar;
-import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Future;
 
-import com.amazonservices.mws.client.*;
-import com.amazon.mws.finances._2015_05_01.*;
-import com.amazon.mws.finances._2015_05_01.model.*;
+import com.amazon.mws.finances._2015_05_01.MWSFinancesServiceAsync;
+import com.amazon.mws.finances._2015_05_01.MWSFinancesServiceAsyncClient;
+import com.amazon.mws.finances._2015_05_01.MWSFinancesServiceException;
+import com.amazon.mws.finances._2015_05_01.model.ListFinancialEventsByNextTokenRequest;
+import com.amazon.mws.finances._2015_05_01.model.ListFinancialEventsByNextTokenResponse;
+import com.amazon.mws.finances._2015_05_01.model.ResponseHeaderMetadata;
 
 /** Sample async call for ListFinancialEventsByNextToken. */
 public class ListFinancialEventsByNextTokenAsyncSample {
