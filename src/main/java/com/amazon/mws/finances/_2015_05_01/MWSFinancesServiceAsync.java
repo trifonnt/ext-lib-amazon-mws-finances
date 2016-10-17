@@ -33,7 +33,7 @@ public interface MWSFinancesServiceAsync extends MWSFinancesService {
      * @param request
      *           ListFinancialEventGroupsRequest request.
      *
-     * @return Future<ListFinancialEventGroupsResponse> response.
+     * @return ListFinancialEventGroupsResponse response.
      */
     Future<ListFinancialEventGroupsResponse> listFinancialEventGroupsAsync(
         ListFinancialEventGroupsRequest request);
@@ -48,7 +48,7 @@ public interface MWSFinancesServiceAsync extends MWSFinancesService {
      * @param request
      *           ListFinancialEventGroupsByNextTokenRequest request.
      *
-     * @return Future<ListFinancialEventGroupsByNextTokenResponse> response.
+     * @return ListFinancialEventGroupsByNextTokenResponse response.
      */
     Future<ListFinancialEventGroupsByNextTokenResponse> listFinancialEventGroupsByNextTokenAsync(
         ListFinancialEventGroupsByNextTokenRequest request);
@@ -61,7 +61,7 @@ public interface MWSFinancesServiceAsync extends MWSFinancesService {
      * @param request
      *           ListFinancialEventsRequest request.
      *
-     * @return Future<ListFinancialEventsResponse> response.
+     * @return ListFinancialEventsResponse response.
      */
     Future<ListFinancialEventsResponse> listFinancialEventsAsync(
         ListFinancialEventsRequest request);
@@ -76,7 +76,7 @@ public interface MWSFinancesServiceAsync extends MWSFinancesService {
      * @param request
      *           ListFinancialEventsByNextTokenRequest request.
      *
-     * @return Future<ListFinancialEventsByNextTokenResponse> response.
+     * @return ListFinancialEventsByNextTokenResponse response.
      */
     Future<ListFinancialEventsByNextTokenResponse> listFinancialEventsByNextTokenAsync(
         ListFinancialEventsByNextTokenRequest request);
@@ -89,7 +89,7 @@ public interface MWSFinancesServiceAsync extends MWSFinancesService {
      * @param request
      *           GetServiceStatusRequest request.
      *
-     * @return Future<GetServiceStatusResponse> response.
+     * @return GetServiceStatusResponse response.
      */
     Future<GetServiceStatusResponse> getServiceStatusAsync(
         GetServiceStatusRequest request);

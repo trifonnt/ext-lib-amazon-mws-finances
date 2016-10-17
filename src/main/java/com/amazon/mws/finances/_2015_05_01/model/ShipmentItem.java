@@ -279,7 +279,7 @@ public class ShipmentItem extends AbstractMwsObject {
     /**
      * Add values for ItemChargeList, return this.
      *
-     * @param itemChargeList
+     * @param values
      *             New values to add.
      *
      * @return This instance.
@@ -333,7 +333,7 @@ public class ShipmentItem extends AbstractMwsObject {
     /**
      * Add values for ItemChargeAdjustmentList, return this.
      *
-     * @param itemChargeAdjustmentList
+     * @param values
      *             New values to add.
      *
      * @return This instance.
@@ -387,7 +387,7 @@ public class ShipmentItem extends AbstractMwsObject {
     /**
      * Add values for ItemFeeList, return this.
      *
-     * @param itemFeeList
+     * @param values
      *             New values to add.
      *
      * @return This instance.
@@ -441,7 +441,7 @@ public class ShipmentItem extends AbstractMwsObject {
     /**
      * Add values for ItemFeeAdjustmentList, return this.
      *
-     * @param itemFeeAdjustmentList
+     * @param values
      *             New values to add.
      *
      * @return This instance.
@@ -495,7 +495,7 @@ public class ShipmentItem extends AbstractMwsObject {
     /**
      * Add values for PromotionList, return this.
      *
-     * @param promotionList
+     * @param values
      *             New values to add.
      *
      * @return This instance.
@@ -549,7 +549,7 @@ public class ShipmentItem extends AbstractMwsObject {
     /**
      * Add values for PromotionAdjustmentList, return this.
      *
-     * @param promotionAdjustmentList
+     * @param values
      *             New values to add.
      *
      * @return This instance.

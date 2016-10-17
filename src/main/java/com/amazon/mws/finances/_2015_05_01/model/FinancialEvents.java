@@ -118,7 +118,7 @@ public class FinancialEvents extends AbstractMwsObject {
     /**
      * Add values for ShipmentEventList, return this.
      *
-     * @param shipmentEventList
+     * @param values
      *             New values to add.
      *
      * @return This instance.
@@ -172,7 +172,7 @@ public class FinancialEvents extends AbstractMwsObject {
     /**
      * Add values for RefundEventList, return this.
      *
-     * @param refundEventList
+     * @param values
      *             New values to add.
      *
      * @return This instance.
@@ -226,7 +226,7 @@ public class FinancialEvents extends AbstractMwsObject {
     /**
      * Add values for GuaranteeClaimEventList, return this.
      *
-     * @param guaranteeClaimEventList
+     * @param values
      *             New values to add.
      *
      * @return This instance.
@@ -280,7 +280,7 @@ public class FinancialEvents extends AbstractMwsObject {
     /**
      * Add values for ChargebackEventList, return this.
      *
-     * @param chargebackEventList
+     * @param values
      *             New values to add.
      *
      * @return This instance.
@@ -334,7 +334,7 @@ public class FinancialEvents extends AbstractMwsObject {
     /**
      * Add values for PayWithAmazonEventList, return this.
      *
-     * @param payWithAmazonEventList
+     * @param values
      *             New values to add.
      *
      * @return This instance.
@@ -388,7 +388,7 @@ public class FinancialEvents extends AbstractMwsObject {
     /**
      * Add values for ServiceProviderCreditEventList, return this.
      *
-     * @param serviceProviderCreditEventList
+     * @param values
      *             New values to add.
      *
      * @return This instance.
@@ -442,7 +442,7 @@ public class FinancialEvents extends AbstractMwsObject {
     /**
      * Add values for RetrochargeEventList, return this.
      *
-     * @param retrochargeEventList
+     * @param values
      *             New values to add.
      *
      * @return This instance.
@@ -496,7 +496,7 @@ public class FinancialEvents extends AbstractMwsObject {
     /**
      * Add values for RentalTransactionEventList, return this.
      *
-     * @param rentalTransactionEventList
+     * @param values
      *             New values to add.
      *
      * @return This instance.
@@ -550,7 +550,7 @@ public class FinancialEvents extends AbstractMwsObject {
     /**
      * Add values for PerformanceBondRefundEventList, return this.
      *
-     * @param performanceBondRefundEventList
+     * @param values
      *             New values to add.
      *
      * @return This instance.
@@ -604,7 +604,7 @@ public class FinancialEvents extends AbstractMwsObject {
     /**
      * Add values for ServiceFeeEventList, return this.
      *
-     * @param serviceFeeEventList
+     * @param values
      *             New values to add.
      *
      * @return This instance.
@@ -658,7 +658,7 @@ public class FinancialEvents extends AbstractMwsObject {
     /**
      * Add values for DebtRecoveryEventList, return this.
      *
-     * @param debtRecoveryEventList
+     * @param values
      *             New values to add.
      *
      * @return This instance.
@@ -712,7 +712,7 @@ public class FinancialEvents extends AbstractMwsObject {
     /**
      * Add values for LoanServicingEventList, return this.
      *
-     * @param loanServicingEventList
+     * @param values
      *             New values to add.
      *
      * @return This instance.
@@ -766,7 +766,7 @@ public class FinancialEvents extends AbstractMwsObject {
     /**
      * Add values for AdjustmentEventList, return this.
      *
-     * @param adjustmentEventList
+     * @param values
      *             New values to add.
      *
      * @return This instance.

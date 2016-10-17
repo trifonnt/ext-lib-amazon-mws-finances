@@ -204,7 +204,10 @@ public class ChargeInstrument extends AbstractMwsObject {
         w.write("http://mws.amazonservices.com/Finances/2015-05-01", "ChargeInstrument",this);
     }
 
-    /** Value constructor. */
+    /** Value constructor. 
+     * @param description 
+     * @param tail 
+     * @param amount */
     public ChargeInstrument(String description,String tail,Currency amount) {
         this.description = description;
         this.tail = tail;

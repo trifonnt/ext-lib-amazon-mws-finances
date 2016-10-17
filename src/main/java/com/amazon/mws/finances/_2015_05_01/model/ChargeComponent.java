@@ -158,7 +158,9 @@ public class ChargeComponent extends AbstractMwsObject {
         w.write("http://mws.amazonservices.com/Finances/2015-05-01", "ChargeComponent",this);
     }
 
-    /** Value constructor. */
+    /** Value constructor. 
+     * @param chargeType 
+     * @param chargeAmount */
     public ChargeComponent(String chargeType,Currency chargeAmount) {
         this.chargeType = chargeType;
         this.chargeAmount = chargeAmount;

@@ -316,7 +316,7 @@ public class PayWithAmazonEvent extends AbstractMwsObject {
     /**
      * Add values for FeeList, return this.
      *
-     * @param feeList
+     * @param values
      *             New values to add.
      *
      * @return This instance.
@@ -544,7 +544,17 @@ public class PayWithAmazonEvent extends AbstractMwsObject {
         w.write("http://mws.amazonservices.com/Finances/2015-05-01", "PayWithAmazonEvent",this);
     }
 
-    /** Value constructor. */
+    /** Value constructor. 
+     * @param sellerOrderId 
+     * @param transactionPostedDate 
+     * @param businessObjectType 
+     * @param salesChannel 
+     * @param charge 
+     * @param feeList 
+     * @param paymentAmountType 
+     * @param amountDescription 
+     * @param fulfillmentChannel 
+     * @param storeName */
     public PayWithAmazonEvent(String sellerOrderId,XMLGregorianCalendar transactionPostedDate,String businessObjectType,String salesChannel,ChargeComponent charge,List<FeeComponent> feeList,String paymentAmountType,String amountDescription,String fulfillmentChannel,String storeName) {
         this.sellerOrderId = sellerOrderId;
         this.transactionPostedDate = transactionPostedDate;

@@ -126,7 +126,7 @@ public class ListFinancialEventGroupsByNextTokenResult extends AbstractMwsObject
     /**
      * Add values for FinancialEventGroupList, return this.
      *
-     * @param financialEventGroupList
+     * @param values
      *             New values to add.
      *
      * @return This instance.

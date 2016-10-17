@@ -390,7 +390,14 @@ public class ListFinancialEventsRequest extends AbstractMwsObject {
         w.write("http://mws.amazonservices.com/Finances/2015-05-01", "ListFinancialEventsRequest",this);
     }
 
-    /** Value constructor. */
+    /** Value constructor. 
+     * @param sellerId 
+     * @param mwsAuthToken 
+     * @param maxResultsPerPage 
+     * @param amazonOrderId 
+     * @param financialEventGroupId 
+     * @param postedAfter 
+     * @param postedBefore */
     public ListFinancialEventsRequest(String sellerId,String mwsAuthToken,Integer maxResultsPerPage,String amazonOrderId,String financialEventGroupId,XMLGregorianCalendar postedAfter,XMLGregorianCalendar postedBefore) {
         this.sellerId = sellerId;
         this.mwsAuthToken = mwsAuthToken;
@@ -401,7 +408,13 @@ public class ListFinancialEventsRequest extends AbstractMwsObject {
         this.postedBefore = postedBefore;
     }    
 
-    /** Legacy value constructor. */
+    /** Legacy value constructor. 
+     * @param sellerId 
+     * @param maxResultsPerPage 
+     * @param amazonOrderId 
+     * @param financialEventGroupId 
+     * @param postedAfter 
+     * @param postedBefore */
     public ListFinancialEventsRequest(String sellerId,Integer maxResultsPerPage,String amazonOrderId,String financialEventGroupId,XMLGregorianCalendar postedAfter,XMLGregorianCalendar postedBefore) {
         this.sellerId = sellerId;
         this.maxResultsPerPage = maxResultsPerPage;

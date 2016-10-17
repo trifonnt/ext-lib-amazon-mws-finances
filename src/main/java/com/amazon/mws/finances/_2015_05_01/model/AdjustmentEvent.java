@@ -170,7 +170,7 @@ public class AdjustmentEvent extends AbstractMwsObject {
     /**
      * Add values for AdjustmentItemList, return this.
      *
-     * @param adjustmentItemList
+     * @param values
      *             New values to add.
      *
      * @return This instance.
@@ -220,7 +220,10 @@ public class AdjustmentEvent extends AbstractMwsObject {
         w.write("http://mws.amazonservices.com/Finances/2015-05-01", "AdjustmentEvent",this);
     }
 
-    /** Value constructor. */
+    /** Value constructor. 
+     * @param adjustmentType 
+     * @param adjustmentAmount 
+     * @param adjustmentItemList */
     public AdjustmentEvent(String adjustmentType,Currency adjustmentAmount,List<AdjustmentItem> adjustmentItemList) {
         this.adjustmentType = adjustmentType;
         this.adjustmentAmount = adjustmentAmount;

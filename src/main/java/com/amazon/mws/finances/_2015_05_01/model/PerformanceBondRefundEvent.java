@@ -170,7 +170,7 @@ public class PerformanceBondRefundEvent extends AbstractMwsObject {
     /**
      * Add values for ProductGroupList, return this.
      *
-     * @param productGroupList
+     * @param values
      *             New values to add.
      *
      * @return This instance.
@@ -220,7 +220,10 @@ public class PerformanceBondRefundEvent extends AbstractMwsObject {
         w.write("http://mws.amazonservices.com/Finances/2015-05-01", "PerformanceBondRefundEvent",this);
     }
 
-    /** Value constructor. */
+    /** Value constructor. 
+     * @param marketplaceCountryCode 
+     * @param amount 
+     * @param productGroupList */
     public PerformanceBondRefundEvent(String marketplaceCountryCode,Currency amount,List<String> productGroupList) {
         this.marketplaceCountryCode = marketplaceCountryCode;
         this.amount = amount;

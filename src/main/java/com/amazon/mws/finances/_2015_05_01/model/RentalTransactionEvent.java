@@ -272,7 +272,7 @@ public class RentalTransactionEvent extends AbstractMwsObject {
     /**
      * Add values for RentalChargeList, return this.
      *
-     * @param rentalChargeList
+     * @param values
      *             New values to add.
      *
      * @return This instance.
@@ -326,7 +326,7 @@ public class RentalTransactionEvent extends AbstractMwsObject {
     /**
      * Add values for RentalFeeList, return this.
      *
-     * @param rentalFeeList
+     * @param values
      *             New values to add.
      *
      * @return This instance.

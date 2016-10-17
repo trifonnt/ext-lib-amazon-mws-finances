@@ -217,7 +217,7 @@ public class DebtRecoveryEvent extends AbstractMwsObject {
     /**
      * Add values for DebtRecoveryItemList, return this.
      *
-     * @param debtRecoveryItemList
+     * @param values
      *             New values to add.
      *
      * @return This instance.
@@ -271,7 +271,7 @@ public class DebtRecoveryEvent extends AbstractMwsObject {
     /**
      * Add values for ChargeInstrumentList, return this.
      *
-     * @param chargeInstrumentList
+     * @param values
      *             New values to add.
      *
      * @return This instance.

@@ -37,7 +37,7 @@ public class ListFinancialEventsAsyncSample {
      * Call the service, log response and exceptions.
      *
      * @param client
-     * @param request
+     * @param requestList
      *
      * @return The response.
      */

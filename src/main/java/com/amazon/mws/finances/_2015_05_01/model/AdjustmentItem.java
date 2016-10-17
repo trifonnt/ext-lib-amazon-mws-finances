@@ -388,7 +388,14 @@ public class AdjustmentItem extends AbstractMwsObject {
         w.write("http://mws.amazonservices.com/Finances/2015-05-01", "AdjustmentItem",this);
     }
 
-    /** Value constructor. */
+    /** Value constructor. 
+     * @param quantity 
+     * @param perUnitAmount 
+     * @param totalAmount 
+     * @param sellerSKU 
+     * @param fnSKU 
+     * @param productDescription 
+     * @param asin */
     public AdjustmentItem(String quantity,Currency perUnitAmount,Currency totalAmount,String sellerSKU,String fnSKU,String productDescription,String asin) {
         this.quantity = quantity;
         this.perUnitAmount = perUnitAmount;
