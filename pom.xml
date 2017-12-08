@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Copyright [2016] [Trifon Trifonov]
+Copyright [2017] [Trifon Trifonov]
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -14,7 +14,8 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
@@ -82,7 +83,13 @@ limitations under the License.
 		<jdk.version>1.6</jdk.version>
 		<compiler.fork>1.6</compiler.fork>
 
-		<amazon-mws-client-runtime-version>1.0.1</amazon-mws-client-runtime-version>
+		<!-- 
+		  Turning off doclint in JDK 8 Javadoc
+		- http://blog.joda.org/2014/02/turning-off-doclint-in-jdk-8-javadoc.html
+		-->
+		<additionalparam>-Xdoclint:none</additionalparam>
+
+		<amazon-mws-client-runtime-version>1.0.2</amazon-mws-client-runtime-version>
 		<maven-bundle-version>2.3.7</maven-bundle-version>
 		<commons-codec-version>1.6</commons-codec-version>
 		<commons-logging-version>1.1</commons-logging-version>
@@ -91,14 +98,6 @@ limitations under the License.
 		<mockito-version>1.9.5</mockito-version>
 		<junit-version>4.11</junit-version>
 	</properties>
-
-	<distributionManagement>
-		<repository>
-			<id>internal.repo</id>
-			<name>Temporary Staging Repository</name>
-			<url>file://${project.build.directory}/mvn-repo</url>
-		</repository>
-	</distributionManagement>
 
 	<dependencies>
 		<dependency>
@@ -265,7 +264,6 @@ limitations under the License.
 		</plugins>
 	</build>
 
-
 	<repositories>
 		<repository>
 			<id>jitpack.io</id>
@@ -300,5 +298,43 @@ limitations under the License.
 				</plugins>
 			</build>
 		</profile>
+
+		<profile>
+			<id>release</id>
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>maven-source-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>attach-sources</id>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<artifactId>maven-javadoc-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>attach-javadocs</id>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
 	</profiles>
+
+	<distributionManagement>
+		<repository>
+			<id>internal.repo</id>
+			<name>Temporary Staging Repository</name>
+			<url>file://${project.build.directory}/mvn-repo</url>
+		</repository>
+	</distributionManagement>
 </project>
