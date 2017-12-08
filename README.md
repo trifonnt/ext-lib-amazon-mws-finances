@@ -33,7 +33,7 @@ Prerequisites
 
 ## How to
 
-### Migrate to new version of Amazon MWS Finances library version
+### Migrate to new version of Amazon MWS Finances library
 ```shell
 $ git clone https://github.com/trifonnt/ext-lib-amazon-mws-finances.git
 
