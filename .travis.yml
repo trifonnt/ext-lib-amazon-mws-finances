@@ -11,6 +11,6 @@ deploy:
   file: target/ext-lib-amazon-mws-finances*
   skip_cleanup: true
   on:
- #   repo: trifonnt/ext-lib-amazon-mws-finances
+#   repo: trifonnt/ext-lib-amazon-mws-finances
     tags: true
     all_branches: true
